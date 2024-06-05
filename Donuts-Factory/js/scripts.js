@@ -51,23 +51,26 @@ window.addEventListener("DOMContentLoaded", (event) => {
 });
 
 let userName = prompt("Enter Your name Please");
-let gender = prompt("Enter Your Gender Please");
-while (gender != "male" && gender != "female") {
-  gender = prompt("Please Enter a correct gender");
-  if (gender == "male" && gender == "female") break;
-}
-if (gender == "male") {
-  alert("Welcome " + "Mr." + userName);
-} else if (gender == "female") {
-  alert("Welcome " + "Ms" + userName);
+function gender() {
+  let gender = prompt("Enter Your Gender Please");
+  while (gender != "male" && gender != "female") {
+    gender = prompt("Please Enter a correct gender");
+    if (gender == "male" && gender == "female") break;
+  }
+  if (gender == "male") {
+    alert("Welcome " + "Mr." + userName);
+  } else if (gender == "female") {
+    alert("Welcome " + "Ms." + userName);
+  }
+
+  // else if(gender != "male" && gender != "female")
+  else {
+    // Without expression
+    alert("Welcome " + userName);
+  }
 }
 
-// else if(gender != "male" && gender != "female")
-else {
-  // Without expression
-  alert("Welcome " + userName);
-}
-
+gender();
 let order = confirm("Do you want order , Donuts , Ice-cream , Coffee , Bakery");
 if (order == true) {
   var c = prompt("Pick what you want?");

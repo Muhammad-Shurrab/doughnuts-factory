@@ -21,7 +21,7 @@ if (l1 > l2) {
   alert(l2 + "," + l1);
 }
 // Q5: Read two numbers and display their sum.
-let number1 = Number(prompt("Please enter a number?"));
+let number1 = +prompt("Please enter a number?");
 let number2 = Number(prompt("Please enter a number?"));
 let number3 = number1 + number2;
 alert(number3);
