@@ -52,10 +52,14 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 let userName = prompt("Enter Your name Please");
 let gender = prompt("Enter Your Gender Please");
+while (gender != "male" && gender != "female") {
+  gender = prompt("Please Enter a correct gender");
+  if (gender == "male" && gender == "female") break;
+}
 if (gender == "male") {
-  alert("Welcome" + "Mr." + userName);
+  alert("Welcome " + "Mr." + userName);
 } else if (gender == "female") {
-  alert("Welcome" + "Ms" + userName);
+  alert("Welcome " + "Ms" + userName);
 }
 
 // else if(gender != "male" && gender != "female")
@@ -64,9 +68,19 @@ else {
   alert("Welcome " + userName);
 }
 
-let order;
-if (confirm("Do you want order something?")) {
-  alert("what do u want");
+let order = confirm("Do you want order , Donuts , Ice-cream , Coffee , Bakery");
+if (order == true) {
+  var c = prompt("Pick what you want?");
+  alert(c + " Is preparing");
+  console.log(userName + " " + c);
 } else {
-  alert("Thanks for the visit!");
+  alert("Thanks for Visit!");
 }
+let i = [userName, gender, c];
+
+let total = ""; // text = "bmw<br>" + "volvo<br>" "ford<br>"
+for (x of i) {
+  total += x + "\n";
+}
+
+console.log(total);

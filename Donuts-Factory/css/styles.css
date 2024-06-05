@@ -11328,6 +11328,10 @@ header.masthead .masthead-heading {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.masthead-subheading {
+  color: rgb(236, 0, 140);
+}
+
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 17rem;
