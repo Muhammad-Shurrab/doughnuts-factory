@@ -87,3 +87,23 @@ for (x of i) {
 }
 
 console.log(total);
+
+let test = document.getElementById("test");
+let sec = document.createElement("div");
+let cont = document.createElement("div");
+let uname = document.createElement("p");
+let info = document.createElement("ol");
+let useri = document.createElement("li");
+
+console.log(sec);
+console.log(uname);
+// console.log(userName);
+console.log(info);
+console.log(useri);
+
+test.appendChild(sec);
+cont.appendChild(uname);
+uname.innerHTML = userName;
+uname.appendChild(info);
+info.appendChild(useri);
+console.log(uname);
