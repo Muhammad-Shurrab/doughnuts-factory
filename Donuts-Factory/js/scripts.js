@@ -51,8 +51,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
 });
 
 let userName = prompt("Enter Your name Please");
-function gender() {
-  let gender = prompt("Enter Your Gender Please");
+let gender = prompt("Enter Your Gender Please");
+function genderChecker() {
   while (gender != "male" && gender != "female") {
     gender = prompt("Please Enter a correct gender");
     if (gender == "male" && gender == "female") break;
@@ -70,7 +70,8 @@ function gender() {
   }
 }
 
-gender();
+genderChecker();
+
 let order = confirm("Do you want order , Donuts , Ice-cream , Coffee , Bakery");
 if (order == true) {
   var c = prompt("Pick what you want?");
@@ -86,24 +87,18 @@ for (x of i) {
   total += x + "\n";
 }
 
-console.log(total);
+// Task-4
 
-let test = document.getElementById("test");
-let sec = document.createElement("div");
-let cont = document.createElement("div");
-let uname = document.createElement("p");
-let info = document.createElement("ol");
-let useri = document.createElement("li");
+let userN = document.querySelector(".name");
+let userInfo = document.querySelector(".user-info");
+let userData = userInfo.querySelectorAll("li");
+let para = document.createElement("p");
 
-console.log(sec);
-console.log(uname);
-// console.log(userName);
-console.log(info);
-console.log(useri);
+userN.innerText = userName;
+userData[0].innerText = gender;
+userData[1].innerText = c;
 
-test.appendChild(sec);
-cont.appendChild(uname);
-uname.innerHTML = userName;
-uname.appendChild(info);
-info.appendChild(useri);
-console.log(uname);
+para.innerText = "Eren Jaeger";
+
+userN.appendChild(para);
+
