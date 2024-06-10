@@ -74,8 +74,40 @@
           </ul>
         </div>
 
+        <form id="form">
+          <label for="fname">Full name:</label><br />
+          <input type="text" id="fname" name="fname" value="Full-name" /><br />
+          <label for="age">Age</label><br />
+          <input type="text" id="age" name="age" value="Age" /><br /><br />
+          <label for="gender">gender</label><br />
+          <input
+            type="text"
+            id="gender"
+            name="gender"
+            value="Gender"
+          /><br /><br />
+          <label for="orderType">Order-Type</label><br />
+          <input
+            type="text"
+            id="orderType"
+            name="orderType"
+            value="Type"
+          /><br /><br />
+
+          <input type="radio" id="cold" name="drink-s" value="Cold" />
+            <label for="cold">Cold</label>  
+          <input type="radio" id="hot" name="drink-s" value="Hot" />  
+          <label for="hot">Hot</label><br /><br />
+          <button type="submit">Submit!</button>
+        </form>
+
+        <p id="userInformation"></p>
+
         <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-        <a class="btn btn-primary btn-xl text-uppercase" href="#services"
+        <a
+          class="btn btn-primary btn-xl text-uppercase"
+          id="order"
+          href="#services"
           >Order Now</a
         >
       </div>
