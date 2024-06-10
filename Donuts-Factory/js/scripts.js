@@ -102,3 +102,33 @@ para.innerText = "Eren Jaeger";
 
 userN.appendChild(para);
 
+let form = document.getElementById("form");
+form.addEventListener("submit", submitted);
+
+function submitted(event) {
+  event.preventDefault();
+  let userInformation = document.getElementById("userInformation");
+
+  // Event Target
+  let form = event.target;
+  let fullName = form.fname.value;
+  let age = form.age.value;
+  let gender = form.gender.value;
+  let orderType = form.orderType.value;
+
+  // Resault
+
+  userInformation.innerHTML =
+    "Full Name:" +
+    fullName +
+    "<br />" +
+    "Age" +
+    age +
+    "<br />" +
+    "Gender" +
+    gender +
+    "<br />" +
+    "Order-Type" +
+    orderType +
+    "<br />";
+}
